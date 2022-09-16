@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Mensual</title>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/95b02ed607.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <a href="movimientos.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Volver</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h1>Contablito v2</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <h3>Registro Semanal en Ventas</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="registro-mensual.html" method="post">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="search">Buscar</label>
+                                    <input type="search" class="form-control" placeholder="Buscar...">
+                                </div>
+                                <div class="col-6">
+                                    <label for="fecha">Fecha</label>
+                                    <input type="week" class="form-control cursor" name="fecha" id="fecha" max="2022-W37" required>
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary mt-4">Filtrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped table-bordered table-hover text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Costo</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Bloque Celular</td>
+                                <td>2</td>
+                                <td>$200</td>
+                                <td>9/9/22</td>
+                                <td>$480</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Cal</td>
+                                <td>2</td>
+                                <td>$200</td>
+                                <td>9/9/22</td>
+                                <td>$480</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Clavos</td>
+                                <td>1</td>
+                                <td>$100</td>
+                                <td>9/9/22</td>
+                                <td>$120</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Ladrillos</td>
+                                <td>2</td>
+                                <td>$100</td>
+                                <td>9/9/22</td>
+                                <td>$240</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Ladrillos</td>
+                                <td>6</td>
+                                <td>$100</td>
+                                <td>9/9/22</td>
+                                <td>$720</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Ladrillos</td>
+                                <td>5</td>
+                                <td>$90</td>
+                                <td>9/9/22</td>
+                                <td>$540</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Total de Productos</th>
+                                    <th scope="col">Total de Ventas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>18</td>
+                                    <td>$2580</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="mt-5 text-center mb-5">
+            <img src="img/grafica.jpeg">
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

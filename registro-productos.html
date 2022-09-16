@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos</title>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/95b02ed607.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Volver</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h1>Contablito v2</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <h3>Registro de productos</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="registro-productos.html" method="post">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="id">ID</label>
+                                    <input type="text" class="form-control" name="id" id="id" required>
+                                </div>
+                                <div class="col">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="tipo">Tipo</label>
+                                    <select name="tipo" id="tipo" class="form-select cursor" required>
+                                        <option value="compra">Compra</option>
+                                        <option value="venta">Venta</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="cantidad">Cantidad</label>
+                                    <input type="number" min="0" class="form-control" name="cantidad" id="cantidad" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="costo">Costo ($UYU)</label>
+                                    <input type="number" min="0" class="form-control" name="costo" id="costo" required>
+                                </div>
+                                <div class="col">
+                                    <label for="fecha">Fecha</label>
+                                    <input type="date" class="form-control cursor" name="fecha" id="fecha" min="2022-09-09" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control rezise" name="descripcion" id="descripcion" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="movimientos.html" class="btn btn-primary mt-5">Ir a registro de movimientos de mercadería</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

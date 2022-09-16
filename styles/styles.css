@@ -1,0 +1,17 @@
+.rezise {
+    resize: none;
+    height: 130px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.alerts {
+    background-color: red;
+}
+
+.container-alert {
+    max-width: 500px;
+    margin: 0 auto;
+}
